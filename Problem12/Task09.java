@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Task09 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        int a[] = new int[10];
+        
+        System.out.println ("Please enter the numbers:");
+        for (int location = 0; location <= a.length - 1; ++location){
+            a[location] = scanner.nextInt();
+        }
+        
+        System.out.println ("Please enter the number to be validated:");
+        int num = scanner.nextInt();
+        
+        int count = 0;
+        for (int location = 0; location <= a.length - 1; ++location){
+            if (a[location] == num){
+                System.out.println ("YES");
+                ++count;
+            }
+        }
+        if (count == 0) {
+            System.out.println ("NO");
+        }
+    }
+}

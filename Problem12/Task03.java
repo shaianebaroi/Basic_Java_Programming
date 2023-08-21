@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Task03 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        int a[] = new int[10];
+        
+        System.out.println ("Please enter the numbers:");
+        for (int location = 0; location <= a.length - 1; ++location){
+            a[location] = scanner.nextInt();
+        }
+        System.out.println ("The numbers you have enterred are:");
+        for (int location = a.length - 1; location >= 0; --location){
+            System.out.println (a[location]);
+        }
+    }
+}

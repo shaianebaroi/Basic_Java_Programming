@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Task01{
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.println ("Please enter the name of your favorite car:");
+        String name = scanner.next();
+        
+        for (int count = 1; count >=20; ++count){
+            System.out.println (name);
+        }
+    }
+}

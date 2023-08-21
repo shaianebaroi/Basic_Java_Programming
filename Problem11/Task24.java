@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Task24 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.println ("Please enter a number:");
+        int quantity = scanner.nextInt();
+        
+        for (int count = 1; count <= quantity; ++count){
+            System.out.print (count);
+        }
+        
+        for (int count = quantity - 1; count >= 1; --count){
+            System.out.print (count);
+        }
+    }
+}
+

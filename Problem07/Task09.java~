@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Task09 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println ("Please enter the number of students:");
+        int quantity = scanner.nextInt();
+        
+        //FOR STORING IDS:
+        int[] a = new int[quantity];        
+        for (int location = 0; location < a.length; ++location){
+            a[location] = scanner.nextInt();
+        }
+        
+        //FOR STORING NAMES:
+        int[] b = new int[quantity];        
+        for (int location = 0; location < b.length; ++location){
+            b[location] = scanner.nextInt();
+        }
+        
+        //FOR STORING MARKS:
+        int[] c = new int[quantity];        
+        for (int location = 0; location < c.length; ++location){
+            c[location] = scanner.nextInt();
+        }
+        
+        //FOR CALCULATING AVERAGE MARKS:
+        int sum = 0;
+        for (int location = 0; location < c.length; ++location){
+            sum = sum + c[location];
+        }
+        int average = sum/quantity;
+        
+        //FOR PRINTING:
+        System.out.println ("Average mark: " + average);
+        for (int location = 0; location < a.length; ++location){
+            System.out.println (b[location] + " : " + c[location]);
+        }
+    }
+}

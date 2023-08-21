@@ -1,0 +1,20 @@
+public class Task12 {
+    public static void main (String [] args){
+        
+        //FIGURING FACTORS:
+        for (int count = 1; count <= 1000; ++count){ // to stop at 1000
+            int divider = 1;
+            int factorcount = 0;
+            while (divider <= count) {
+                if (count%divider == 0) {
+                    ++factorcount; 
+                }
+                if (factorcount == 2){
+                    System.out.println (count);
+                }
+                ++divider;
+            }
+        }
+    }
+}
+        

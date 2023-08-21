@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Task07 {
+    public static void main(String[] args){ 
+        Scanner scanner = new Scanner (System.in);
+        
+        int sum = 0;
+        for (int count = 1; count <= quantity; ++count){
+            if (count%7==0 && count%9==0){
+                System.out.print (sum + "  ");
+            }
+        }
+        
+        //PRINTING:
+        System.out.println("The sum of y is " + sum);
+    }
+}
+

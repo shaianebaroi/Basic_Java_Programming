@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Task10 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println ("Please enter the quantity of the numbers to be inputted:");
+        int quantity = scanner.nextInt();
+        
+        int[] a = new int[quantity];
+        
+        //INPUT:
+        System.out.println ("Please enter the numbers:");
+        for (int count = 0; count < a.length; ++count){
+            a[count] = scanner.nextInt();
+        }
+        
+        int noCount = 0;
+        for (int count = 0; count < a.length-1; ++count){
+            if (!(a[count] < a[count+1])) {
+                ++noCount;
+            }
+        }
+        
+        if (noCount >= 1){
+            System.out.println ("NO");
+        }
+        else if (noCount == 0){
+            System.out.println ("YES");
+        }
+    }
+}
+    
+    

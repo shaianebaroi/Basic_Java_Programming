@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Task04 {
+    public static void main (String [] args){
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println ("Please enter the number.");
+        int num = sc.nextInt ();
+        
+        int product = 10;
+        while (!(num == 1)) {
+            product = product * 10;
+            --num;
+        }
+        
+        System.out.println (product);
+    }
+}

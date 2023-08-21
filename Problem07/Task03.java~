@@ -1,0 +1,18 @@
+public class Task03 {
+    public static void main (String[] args){
+        int[] a = new int[] {10,30,20,50,40};
+        
+        //SORTING:
+        int max = a[0]
+            for (int location = 0; location < a.length; ++location){
+            if (a[location] > max){
+                max = a[location];
+                maxLocation = location;
+            }
+        }
+        
+        //PRINTING:
+        System.out.println ("Largest number is " + a[location] + ".");
+        System.out.println ("Largest number was found at location " + location ".");
+    }
+}

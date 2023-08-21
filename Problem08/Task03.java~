@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Task03 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.println ("Please enter the radius of the circle:");
+        int radius = scanner.nextInt();
+        
+        int area = Math.pi * radius * radius;
+        int circumference = 2 * Math.pi * radius; 
+        
+        System.out.println (area);
+        System.out.println (circumference);
+    }
+}

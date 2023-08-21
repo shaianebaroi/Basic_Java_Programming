@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Task04 {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner (System.in);
+        int[] a = new int[3];
+        
+        //INPUT:
+        for (int location = 0; location <= 2; ++location){
+            int num = scanner.nextInt();
+        } 
+        
+        //FIND THE MAXIMUM:
+        for (int location = 0; location <=2; ++location){
+            for (int i = 1; i <=2; ++i){
+                if (a[location] > a[i]){
+                    int maximum = a[location];
+                    System.out.println (maximum);
+                }
+            }
+        }
+    }
+}

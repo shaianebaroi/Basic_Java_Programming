@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Task05 {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] a = new int[5];
+        //INPUT:
+        for (int count = 0; count < a.length; ++count){
+            System.out.println ("Please enter a number.");
+            a[count] = scanner.nextInt();
+        }
+        
+        //SORTING: 
+        for (int count = 0; count < a.length-2; ++count){
+            int min = a[count];
+            int minLocation = count;
+            
+            for (int location = count+1; location < a.length; ++location){
+                if (a[location]< min){
+                    min = a[location];
+                    minLocation = location;
+                }
+            }
+            
+            int temp = a[count];
+            a[count] = min;
+            min = temp; 
+        }
+        
+        for (int count = 0; count < a.length; ++count){
+            System.out.println (a[count]);
+        }
+        
+    }
+}
+

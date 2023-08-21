@@ -1,0 +1,10 @@
+class Employee {
+    String name;
+    int salary;
+    int increaseSalary;
+    
+    int salary {
+        int temp = (increaseSalary/100) * salary;
+        return temp            
+    }
+}

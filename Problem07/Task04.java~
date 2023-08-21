@@ -1,0 +1,23 @@
+public class Task04 {
+    public static void main (String[] args){
+        int[] a = new int[] {10,30,20,50,40};
+        
+        //SORTING:
+        
+        for (int location = 0; location < marks.length; ++location){
+            if (marks[location] >  max){
+                max = marks[location];
+                maxLocation = location;
+            }
+        }
+        int temp = marks[0];
+        marks[0] = max;
+        marks[maxLocation] = temp;
+        
+        //PRINTING:
+        
+        for (int location = 0; location < a.length; ++location){
+            System.out.println (a[location] + "  ");
+        }
+    }
+}

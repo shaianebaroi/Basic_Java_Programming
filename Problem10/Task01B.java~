@@ -1,0 +1,9 @@
+public class Task01B {
+    public static void main (String[] args) {
+        for (int count = 10; count > -20; --count){
+            count = count - 10; 
+            System.out.print (count + "  ");
+            ++count;
+        } 
+    }
+}

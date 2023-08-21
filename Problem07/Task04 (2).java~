@@ -1,0 +1,27 @@
+//FORMALITIES
+
+public class Task04 {
+    public static void main (String [] args) {
+        
+        //DECLARING ARRAY
+        int []marks = new int [] {10,30,20,50,40}; 
+        
+        //FINDING MAX AND LOCATION
+        int location = 0;
+        int max = marks[0];
+        for (int i = 0; i < marks.length; ++i){
+            if (marks[i] > max) {
+                max = marks[i];
+                maxLocation = i; 
+            }
+        } 
+        //SWAPPING
+        a[maxLocation] = a[0];
+        a[0] = max;        
+        
+        //DISPLAY
+        for (int i = 0; i < marks.length; ++i){
+            System.out.println (a[i] + ", ");
+        }
+    }
+}

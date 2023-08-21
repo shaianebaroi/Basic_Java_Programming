@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Task2 {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println ("Please enter the student's mark:");
+        int mark = sc.nextInt ();
+        
+        if (mark < 0) && (mark > 100) {
+            System.out.println ("Wrong input.");
+        }
+        else if (mark < 50)   {
+            System.out.println ("F");
+        }
+    }
+}
+    

@@ -1,0 +1,20 @@
+public class Task02 {
+    public static void main (String[] args){
+        int[] marks = new int[] {10,30,25,50,40};
+        
+        //AVERAGE:
+        int sum = 0;
+        for (int location = 0; location < marks.length; ++location){
+            sum = sum + marks[location];
+        }
+        
+        int average = sum/marks.length-1;
+        
+        for (int location = 0; location < marks.length; ++location){
+            if marks[location] > average{
+                System.out.print (marks[location] + "  ");
+            }
+        }
+    }
+}
+        

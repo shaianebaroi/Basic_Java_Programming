@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Task02{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner (System.in);
+        int[] a = new int [5]; 
+        
+        System.out.println ("Please enter a number.");
+        a[0] = scanner.nextInt();
+        a[0] = max; 
+        
+        for (int location = 0; location < a.length; ++location){
+            System.out.println ("Please enter a number.");
+            int a[location] = scanner.nextInt();
+        }
+        
+        for (int location = 1; location < a.length; ++location){
+            if (a[location]>max) {
+                max = a[location];
+                int maxLocation = location;
+            }
+        }
+        System.out.println (max);
+        System.out.println (maxLocation);
+    }

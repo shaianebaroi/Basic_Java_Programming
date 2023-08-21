@@ -1,0 +1,9 @@
+public class EmployeeTester {
+    public static void main (String[] args) {
+        Employee a = new Employee();
+        a.name = "Mohammad Java Choudhury";
+        a.salary = 10000;
+        a.increaseSalary(20); //percentage
+        System.out.println(a.salary);//prints 12000
+    }
+}
